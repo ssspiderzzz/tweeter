@@ -1,0 +1,19 @@
+header {
+  font-size: 30px;
+  height: 500px;
+  width: 100%;
+  background-color: #f59300;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+header div {
+  top: 130px;
+  position: relative; 
+  text-align: center;
+  color: white;
+
+  font-family: 'Source Sans Pro', sans-serif
+}
+  
+
+

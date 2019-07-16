@@ -1,0 +1,56 @@
+nav {
+  position: fixed;
+  color: #FFFFFF;
+  width: 100%;
+  background-color: #4056A1;
+  z-index: 99;
+  height: 120px;
+  box-shadow: 0 4px 3px rgba(0,0,0,.5);
+}
+
+nav div {
+  position: relative;
+  top: 20px;
+  margin: 1.5em;
+}
+
+.tweeterIcon {
+  float: left;
+  font-family: 'Bungee', cursive;
+  position: relative;
+  font-size: 40px;
+}
+
+.writeNewTweet {
+  float: right;
+  position: relative;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+span.bold {
+  font-weight: 700;
+}
+
+i {
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  left: 50%;
+  
+}
+
+.down1 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 10px;
+}
+
+.down2 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 30px;
+}
