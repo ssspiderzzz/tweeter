@@ -6,9 +6,12 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -21,12 +24,52 @@
 
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div>
+      <span class="tweeterIcon">tweeter</span>
+      <span class="writeNewTweet">
+        <span class="bold">Write</span> a new tweet
+      <br>
+      <i class="arrow down1"></i>
+      <br>
+      <i class="arrow down2"></i>
+    </span>
+      </div>
     </nav>
-
+    
+  <header>
+    <div>
+      <img src="/images/profile-hex.png"> 
+    </div>
+    <br>
+    <div>
+        <span class="bold">Spider</span> Zhu
+     </div>
+  </header>
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
-    </main>
 
+        <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form>
+              <textarea name="text" placeholder="What are you humming about?"></textarea>
+              <input type="submit" value="Tweet">
+              <span class="counter">140</span>
+            </form>
+          </section>
+
+        <p class="bold">Final Fantasy VIII Remastered will come with features for faster progression</p><br>
+        <div>
+            The long-awaited Final Fantasy VIII Remastered, which Square Enix finally announced at E3 2019, will come with features that will enable faster progression.
+    
+            Series producer Yoshinori Kitase said in an interview with Famitsu magazine that Final Fantasy VIII Remastered will integrate the features of triple speed, which will make the game run at a much faster pace; battle enhancements, which will keep all characters’ HP and ATB gauges at max and Limit Breaks always available; and no random encounters, for uninterrupted movement across maps and areas.
+            
+            The features will allow players to replay the Final Fantasy VIII story without having to go through the same grind as during their first crack at the 1999 PlayStation classic RPG.
+            
+            PC players will be able to enjoy additional features that will allow them to acquire all items, abilities, Limit Breaks, and triple triad cards, as well as boost GF levels, gil, and magic to maximum. The PC version will also offer highly customizable system settings, though it remains unclear what exactly this means.
+            
+            Kitase did not reveal in the interview why the PlayStation 4, Xbox One, and Nintendo Switch versions of Final Fantasy VIII Remastered will not come with the PC exclusive features.
+        </div>
+      </main>
   </body>
 </html>
