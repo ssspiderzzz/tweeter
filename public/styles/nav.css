@@ -5,7 +5,7 @@ nav {
   background-color: #4056A1;
   z-index: 99;
   height: 120px;
-  box-shadow: 0 4px 3px rgba(0,0,0,.5);
+  box-shadow: 0 10px 10px rgba(0,0,0,.5);
 }
 
 nav div {

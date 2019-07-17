@@ -1,10 +1,10 @@
-main section {
+main .new-tweet {
   text-align: center;
   position: relative;
   top: 10px;
 }
 
-main section textarea {
+main .new-tweet textarea {
   resize: none;
   border: 0px;
   height: 50px;
@@ -17,14 +17,14 @@ main section textarea {
   border-bottom-right-radius: 4px;
 }
 
-main section input {
+main .new-tweet input {
   float: left;
   background-color: #3b5998;
   font-family: 'Bungee', cursive;
   color: white;
 }
 
-main section span {
+main .new-tweet span {
   float: right;
   font-family: 'Bungee', cursive;
   color:#5d5d63;
