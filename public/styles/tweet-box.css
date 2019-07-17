@@ -1,6 +1,6 @@
 main .tweet {
   position: relative;
-  top: 50px;
+  top: 55px;
   border: 5px;
   border-style: solid;
   border-color: #5d5d63;
@@ -32,6 +32,7 @@ main .userHandle {
 }
 
 main .tweetContent {
+  overflow-wrap: break-word;
   padding-bottom: 30px;
   font-weight: 600;
   width: 90%;
@@ -63,5 +64,4 @@ main .tweetIcon {
   position: relative;
   bottom: 50px;
   right: 50px
-
 }

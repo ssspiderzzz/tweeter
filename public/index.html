@@ -22,6 +22,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/animation.js"></script>
   </head>
 
   <body>
@@ -33,9 +34,7 @@
       <span class="writeNewTweet">
         <span class="bold">Write</span> a new tweet
       <br>
-      <i class="arrow down1"></i>
-      <br>
-      <i class="arrow down2"></i>
+      <img id='arrow' height='30px' width='30px' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjYiIGhlaWdodD0iMjYiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMTUyLjE1Mzg1LDQ2LjQ2Mjc0bC0xMy4zMzQxMywtMjAuMDAxMjFsLTUyLjgxOTcxLDM2LjUxMzgybC01Mi44MTk3MSwtMzYuNTEzODJsLTEzLjMzNDEzLDIwLjAwMTIxbDY2LjE1Mzg1LDQ2LjI4MTg1ek0xNTIuMTUzODUsOTkuNDg5MTlsLTEzLjMzNDEzLC0yMC4yMzM3OGwtNTIuODE5NzEsMzYuNTEzODJsLTUyLjgxOTcxLC0zNi41MTM4MmwtMTMuMzM0MTMsMjAuMjMzNzhsNjYuMTUzODUsNDYuMDQ5Mjh6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+">
     </span>
       </div>
     </nav>
@@ -56,12 +55,12 @@
         <section class="new-tweet">
             <form>
               <textarea name="text" id="inputText" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
+                <input id='createNewTweet' type="submit" value="Tweet">
               <span class="counter">140</span>
             </form>
         </section>
 
-        <section class="tweets">
+      <section class="tweets">
           
       </section>
 

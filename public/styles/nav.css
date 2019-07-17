@@ -33,24 +33,11 @@ span.bold {
   font-weight: 900;
 }
 
-i {
-  border: solid red;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+#arrow {
+  bottom: 0px;
   position: relative;
   left: 50%;
-  
-}
-
-.down1 {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  bottom: 10px;
-}
-
-.down2 {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  bottom: 30px;
+  transition: top .99s ease-in-out;
+  -moz-transition: top .99s ease-in-out;
+  -webkit-transition: top .99s ease-in-out;
 }
