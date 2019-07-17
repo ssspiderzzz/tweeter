@@ -5,6 +5,8 @@ $(document).ready(function() {
     $('.counter').html(`${140 - counter}`)
     if (counter > 140) {
       $('.counter').css('color', 'red')
+    } else {
+      $('.counter').css('color', '#5d5d63')
     }
   })
 
