@@ -1,4 +1,4 @@
-main .tweets:hover {
+main .tweet:hover {
   box-shadow: 10px 10px 0px #4056A1;
   transition: box-shadow .99s ease-in-out;
   -moz-transition: box-shadow .99s ease-in-out;
@@ -7,12 +7,23 @@ main .tweets:hover {
 
 main .avatarNameHandle {
   opacity: 0.5;
+  transition: opacity .99s ease-in-out;
+  -moz-transition: opacity .99s ease-in-out;
+  -webkit-transition: opacity .99s ease-in-out;
+}
+
+main .tweet:hover .avatarNameHandle{
+  opacity: 1;
+}
+
+main .userHandle {
+  opacity: 0;
   transition: opacity .30s ease-in-out;
   -moz-transition: opacity .30s ease-in-out;
   -webkit-transition: opacity .30s ease-in-out;
 }
 
-main .tweets:hover .avatarNameHandle{
+main .tweet:hover .userHandle {
   opacity: 1;
 }
 
@@ -23,7 +34,7 @@ main .tweetContent {
   -webkit-transition: opacity .30s ease-in-out;
 }
 
-main .tweets:hover .tweetContent{
+main .tweet:hover .tweetContent{
   opacity: 1;
 }
 
@@ -34,7 +45,7 @@ main footer {
   -webkit-transition: opacity .30s ease-in-out;
 }
 
-main .tweets:hover footer{
+main .tweet:hover footer{
   opacity: 1;
 }
 

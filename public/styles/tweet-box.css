@@ -1,13 +1,15 @@
-main .tweets {
+main .tweet {
   position: relative;
   top: 50px;
   border: 5px;
   border-style: solid;
   border-color: #5d5d63;
   width: 100%;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
-main .tweets hr {
+main .tweet hr {
   border: none;
   clear: both;
 }
