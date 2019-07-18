@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 
 const userHelper    = require("../lib/util/user-helper")

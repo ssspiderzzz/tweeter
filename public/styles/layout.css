@@ -21,12 +21,12 @@ body {
 
 .container {
   position: relative;
-  top: 25px;
+  top: 0px;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .container .bold {

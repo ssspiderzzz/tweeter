@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(() => {
 
 // Animation for the arrow down
@@ -6,7 +7,7 @@ $(() => {
     a = $('#arrow')
     a.css('top', '0px');
     setTimeout(function () {
-      a.css('top', '15px');;
+      a.css('top', '15px');
     }, 1000);
   }
   arrows();

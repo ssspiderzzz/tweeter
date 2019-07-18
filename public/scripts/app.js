@@ -1,5 +1,35 @@
+/* eslint-disable no-undef */
 $(document).ready(function() {
 
+const timeSince = function(date) {
+
+  let seconds = Math.floor((new Date() - date) / 1000);
+
+  let interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years ago";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months ago";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days ago";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours ago";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes ago";
+  }
+  return Math.floor(seconds) + " seconds ago";
+}
+
+  
 const errorTextInput = function(counter) {
   $('.errorBox').empty();
   let conditionalText = "";
@@ -42,7 +72,7 @@ $tweet.html(`
     <hr />
       <div class="tweetContent">${tweet.content.text}</div>
       <div class="border"></div>
-      <footer class="tweetTime">${new Date(tweet.created_at)}</footer>
+      <footer class="tweetTime">${timeSince(tweet.created_at)}</footer>
     <footer class="tweetIcon">
       <img id="flag" height="30" width="30" src="https://img.icons8.com/officel/16/000000/flag.png"></img>
       <img id="refresh" height="30" width="30" src="https://img.icons8.com/officexs/16/000000/repeat.png"></img>
