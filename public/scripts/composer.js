@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(() => {
 
     // Rotating the big avatar (for fun)
@@ -21,10 +22,21 @@ $(() => {
     $(document).on("scroll", function() {
       let scrollPosition = $(document).scrollTop();
       if (scrollPosition === 0) {
-          $('#toTheTop').css('opacity', '0');
+        $('#toTheTop').css('opacity', '0');
       } else {
         $('#toTheTop').css('opacity', '1');
     } 
     });
-
+    // Toggle the nav part
+    $(document).on("scroll", function() {
+        if ($(window).width() < 768) {
+          let scrollPosition = $(document).scrollTop();
+        if (scrollPosition > 400) {
+          $('#nav').hide('up');
+        } 
+        if (scrollPosition < 400) {
+          $('#nav').show('up');
+        }
+      } 
+    });
   });

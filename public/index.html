@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-box-hover.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
     
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -29,44 +30,46 @@
 
   <body>
 
-    <!-- Top nav bar (fixed) -->
-    <nav>
+      <!-- Top nav bar (fixed) -->
+      <nav id='nav'>
+        <div>
+          <span class="tweeterIcon">tweeter</span>
+          <span class="writeNewTweet">
+            <span class="bold">Write</span> a new tweet
+            <br>
+            <img id='arrow' height='30px' width='30px' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjYiIGhlaWdodD0iMjYiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMTUyLjE1Mzg1LDQ2LjQ2Mjc0bC0xMy4zMzQxMywtMjAuMDAxMjFsLTUyLjgxOTcxLDM2LjUxMzgybC01Mi44MTk3MSwtMzYuNTEzODJsLTEzLjMzNDEzLDIwLjAwMTIxbDY2LjE1Mzg1LDQ2LjI4MTg1ek0xNTIuMTUzODUsOTkuNDg5MTlsLTEzLjMzNDEzLC0yMC4yMzM3OGwtNTIuODE5NzEsMzYuNTEzODJsLTUyLjgxOTcxLC0zNi41MTM4MmwtMTMuMzM0MTMsMjAuMjMzNzhsNjYuMTUzODUsNDYuMDQ5Mjh6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+">
+          </span>
+        </div>
+      </nav>
+
+    <header>
       <div>
-      <span class="tweeterIcon">tweeter</span>
-      <span class="writeNewTweet">
-        <span class="bold">Write</span> a new tweet
-      <br>
-      <img id='arrow' height='30px' width='30px' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjYiIGhlaWdodD0iMjYiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMTUyLjE1Mzg1LDQ2LjQ2Mjc0bC0xMy4zMzQxMywtMjAuMDAxMjFsLTUyLjgxOTcxLDM2LjUxMzgybC01Mi44MTk3MSwtMzYuNTEzODJsLTEzLjMzNDEzLDIwLjAwMTIxbDY2LjE1Mzg1LDQ2LjI4MTg1ek0xNTIuMTUzODUsOTkuNDg5MTlsLTEzLjMzNDEzLC0yMC4yMzM3OGwtNTIuODE5NzEsMzYuNTEzODJsLTUyLjgxOTcxLC0zNi41MTM4MmwtMTMuMzM0MTMsMjAuMjMzNzhsNjYuMTUzODUsNDYuMDQ5Mjh6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+">
-    </span>
+        <img id="bigAvatar" src="/images/profile-hex.png"> 
       </div>
-    </nav>
-    
-  <header>
-    <div>
-      <img id="bigAvatar" src="/images/profile-hex.png"> 
-    </div>
-    <br>
-    <div>
-        <span class="bold">Spider</span> Zhu
-     </div>
-  </header>
-    
+      <br>
+      <div>
+          <span class="bold">Spider</span> Zhu
+      </div>
+    </header>
+
     <!-- Page-specific (main) content here -->
     <main class="container">
-
-        <section class="new-tweet">
-            <form>
-              <textarea name="text" id="inputText" placeholder="What are you humming about?"></textarea>
-                <input id='createNewTweet' type="submit" value="Tweet">
-              <span class="counter">140</span>
-            </form>
-        </section>
+      <section class="new-tweet">
+        <form>
+          <textarea name="text" id="inputText" placeholder="What are you humming about?"></textarea>
+          <input id='createNewTweet' type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
 
       <section class="tweets">
-          
+        <!-- New tweets boxes content here -->
       </section>
 
     </main>
+
     <img id="toTheTop" height='120px' width='120px' src="https://img.icons8.com/dusk/64/000000/circled-chevron-up.png">
+  
   </body>
+
 </html>

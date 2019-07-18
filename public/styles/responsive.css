@@ -1,0 +1,74 @@
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+nav {
+  width: 100%
+}
+header {
+  width: 100%;
+  height: 500px;
+}
+header div {
+  top: 130px;
+}
+main {
+  width: 90%;
+}
+.tweeterIcon {
+  font-size: 24px;
+}
+.writeNewTweet {
+  font-size: 16px;
+}
+#toTheTop {
+  height: 80px;
+  width: 80px;
+}
+nav {
+  color: #FFFFFF;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 33%;
+    margin: 3rem;
+    margin-top: 150px;
+    height: 400px;
+  }
+  header div {
+    top: 30px;
+  }
+  main {
+    width: 54%;
+    margin: 3rem;
+  }
+  .container {
+    top: 100px;
+  }
+  .tweeterIcon {
+    font-size: 40px;
+  }
+  .writeNewTweet {
+    font-size: 24px;
+  }
+  #toTheTop {
+    height: 120px;
+    width: 120px;
+  }
+  nav {
+    position: fixed;
+    color: #FFFFFF;
+    width: 100%;
+    background-color: #4056A1;
+    z-index: 99;
+    height: 120px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+  }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 
 // Simulates the kind of delay we see with network or filesystem operations
