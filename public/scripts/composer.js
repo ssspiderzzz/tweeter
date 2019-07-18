@@ -9,14 +9,15 @@ $(() => {
       $('#bigAvatar').css(`transform`, `rotate(0deg)`);
     })
 
-    // Toggling up the new tweets box
+    // Toggling up the new tweets box, initialize the new-tweet box as hidden
+    $('.new-tweet').hide();
     $('#arrow').click(() => {
-      $('.new-tweet').slideToggle("up")
+      $('.new-tweet').slideToggle("up");
     })
 
     // Navigate the page to the top
     $('#toTheTop').click(() => {
-      $(document).scrollTop(0)
+      $(document).scrollTop(0);
     })
 
     $(document).on("scroll", function() {
