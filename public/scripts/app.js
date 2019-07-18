@@ -67,7 +67,11 @@ $submit.on('submit',(event) => {
   //
   $.post('/tweets', $submit.serialize(), () => {
     $('.errorBox').empty();
-    $.ajax('/tweets', { method: 'GET' }).then(renderTweets);
+    $.ajax('/tweets', { method: 'GET' }).then((data) => {
+      let newTw = data.length - 1;
+      $('#inputText').val('');
+      $('.tweets').prepend(createTweetElement(data[newTw]));
+    });
   })
 });
 
