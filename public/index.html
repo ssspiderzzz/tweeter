@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -23,6 +24,7 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/animation.js"></script>
+    <script type="text/javascript" src="/scripts/composer.js"></script>
   </head>
 
   <body>
@@ -41,7 +43,7 @@
     
   <header>
     <div>
-      <img src="/images/profile-hex.png"> 
+      <img id="bigAvatar" src="/images/profile-hex.png"> 
     </div>
     <br>
     <div>
@@ -64,6 +66,7 @@
           
       </section>
 
-      </main>
+    </main>
+    <img id="toTheTop" height='120px' width='120px' src="https://img.icons8.com/dusk/64/000000/circled-chevron-up.png">
   </body>
 </html>

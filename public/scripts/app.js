@@ -58,7 +58,7 @@ const $submit = $('form');
 $submit.on('submit',(event) => {
   console.log('Button clicked, performing ajax call...');
   event.preventDefault();
-  // read the text counter
+  // read the text counter, validating the text.
   let counter = $("#inputText").val().trim().length;
   if (counter > 140 || counter === 0 || counter === null) {
     errorTextInput(counter);
