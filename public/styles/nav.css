@@ -34,10 +34,21 @@ span.bold {
 }
 
 #arrow {
+  cursor: pointer;
   bottom: 0px;
   position: relative;
   left: 50%;
   transition: top .99s ease-in-out;
   -moz-transition: top .99s ease-in-out;
   -webkit-transition: top .99s ease-in-out;
+}
+
+#toTheTop {
+  opacity: 0;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  transition: opacity .50s ease-in-out;
+  -moz-transition: opacity .50s ease-in-out;
+  -webkit-transition: opacity .50s ease-in-out;
 }
