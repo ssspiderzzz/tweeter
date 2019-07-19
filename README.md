@@ -21,8 +21,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshot
 
-Screenshot for desktop width.
-!["Screenshot description"] https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-desktop%20width.png
+!["Screenshot for desktop width"](https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-desktop%20width.png)
 
-Screenshot for cellphone/tablet width.
-!["Screenshot description"] https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-narrow%20width.png
+!["Screenshot for cellphone/tablet width"](https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-narrow%20width.png)
