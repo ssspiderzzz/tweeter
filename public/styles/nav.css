@@ -51,3 +51,10 @@ span.bold {
   -moz-transition: opacity .50s ease-in-out;
   -webkit-transition: opacity .50s ease-in-out;
 }
+
+#rocket {
+  transform: rotate(-45deg);
+  transition: bottom 6s ease-in-out;
+  -moz-transition: bottom 6s ease-in-out;
+  -webkit-transition: bottom 6s ease-in-out;
+}
