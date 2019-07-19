@@ -15,3 +15,14 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- md5
+
+## Screenshot
+
+Screenshot for desktop width.
+!["Screenshot description"] https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-desktop%20width.png
+
+Screenshot for cellphone/tablet width.
+!["Screenshot description"] https://github.com/ssspiderzzz/tweeter/blob/master/public/images/screencapture-narrow%20width.png
