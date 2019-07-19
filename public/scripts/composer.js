@@ -13,12 +13,18 @@ $(() => {
     $('.new-tweet').hide();
     $('#arrow').click(() => {
       $('.new-tweet').slideToggle("up");
-    })
+    });
 
     // Navigate the page to the top
     $('#toTheTop').click(() => {
       $(document).scrollTop(0);
-    })
+      $('#rocket').css('opacity', '1');
+      $('#rocket').css('bottom', '2000px');
+      setTimeout(() => {
+        $('#rocket').css('opacity', '0');
+        $('#rocket').css('bottom', '-75px');
+      }, 3000);
+    });
 
     $(document).on("scroll", function() {
       let scrollPosition = $(document).scrollTop();

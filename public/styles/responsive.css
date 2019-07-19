@@ -34,6 +34,12 @@ nav {
   z-index: 99;
   height: 120px;
 }
+#rocket {
+  opacity: 1;
+  position: fixed;
+  right: 15px;
+  bottom: -75px;
+}
 
 @media (min-width: 768px) {
   header {
@@ -70,5 +76,12 @@ nav {
     z-index: 99;
     height: 120px;
     box-shadow: 0 10px 10px rgba(0,0,0,.5);
+  }
+
+  #rocket {
+    opacity: 1;
+    position: fixed;
+    right: 35px;
+    bottom: -75px;
   }
 }
