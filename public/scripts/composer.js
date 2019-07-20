@@ -11,19 +11,27 @@ $(() => {
 
     // Toggling up the new tweets box, initialize the new-tweet box as hidden
     $('.new-tweet').hide();
-    $('#arrow').click(() => {
+    $('.writeNewTweet').click(() => {
       $('.new-tweet').slideToggle("up");
     });
 
     // Navigate the page to the top
     $('#toTheTop').click(() => {
       $(document).scrollTop(0);
-      $('#rocket').css('opacity', '1');
-      $('#rocket').css('bottom', '2000px');
+      $('#rocket').css({
+        'opacity': '1',
+        'bottom': '110%'
+      });
       setTimeout(() => {
-        $('#rocket').css('opacity', '0');
-        $('#rocket').css('bottom', '-75px');
-      }, 3000);
+        $('#rocket').css({
+          'transition': 'bottom 0s ease-in-out',
+          'opacity': '0',
+          'bottom': '-10%'
+        });
+      }, 4000);
+      setTimeout(() => {
+        $('#rocket').css('transition', 'bottom 4s ease-in-out');
+      }, 4200);
     });
 
     $(document).on("scroll", function() {

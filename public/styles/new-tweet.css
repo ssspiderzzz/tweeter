@@ -40,21 +40,21 @@ main .error {
 }
 
 main .errorText {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color:rgb(255, 132, 0);
-  margin: 15px;
+  margin: 5px;
   vertical-align: middle;
 }
 
 main #danger1 {
-  height:80px;
+  height:60px;
   text-align: left;
   vertical-align: middle;
 }
 
 main #danger2 {
-  height:80px;
+  height:60px;
   text-align: right;
   vertical-align: middle;
 }
