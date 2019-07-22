@@ -32,6 +32,7 @@ main .userHandle {
 }
 
 main .tweetContent {
+  white-space: pre-wrap;
   overflow-wrap: break-word;
   padding-bottom: 30px;
   font-weight: 600;

@@ -6,7 +6,7 @@ $(document).ready(function() {
     let conditionalText = "";
     if (counter > 140) {
       conditionalText = `Too long! Please respect our arbitrary limit of 140 chars. #kthxbye`
-    } else if (counter === 0 || counter === null) {
+    } else if (counter === 0 || counter === null || !$("#inputText").val().replace(/\s/g, '').length) {
       conditionalText = `Please type something! Empty tweets are not allowed. #kthxbye`
     }
     let $error = $('<div>').addClass('errorBox')
@@ -60,8 +60,8 @@ $(document).ready(function() {
     console.log('Button clicked, performing ajax call...');
     event.preventDefault();
     // read the text counter, validating the text.
-    let counter = $("#inputText").val().trim().length;
-    if (counter > 140 || counter === 0 || counter === null) {
+    let counter = $("#inputText").val().length;
+    if (counter > 140 || counter === 0 || counter === null || !$("#inputText").val().replace(/\s/g, '').length) {
       errorTextInput(counter);
       return false;
     }
