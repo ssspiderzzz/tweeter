@@ -36,9 +36,9 @@ $(document).ready(function() {
   let $tweet = $('<article>').addClass('tweet');
   $tweet.html(`
       <div class="avatarNameHandle">
-              <img class="avatar" src="${tweet.user.avatars}">
-              <span class="userName">${tweet.user.name}</span>
-              <span class="userHandle">${tweet.user.handle}</span>
+        <img class="avatar" src="${tweet.user.avatars}">
+        <span class="userName">${tweet.user.name}</span>
+        <span class="userHandle">${tweet.user.handle}</span>
       </div>
       <hr />
         <div class="tweetContent">${tweet.content.text}</div>
